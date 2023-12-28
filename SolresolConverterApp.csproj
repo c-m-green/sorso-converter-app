@@ -11,6 +11,12 @@
     <UseWinUI>true</UseWinUI>
     <EnableMsixTooling>true</EnableMsixTooling>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="SolresolConverter\**" />
+    <EmbeddedResource Remove="SolresolConverter\**" />
+    <None Remove="SolresolConverter\**" />
+    <Page Remove="SolresolConverter\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -34,7 +40,7 @@
     package has not yet been restored.
   -->
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
-    <ProjectCapability Include="Msix"/>
+    <ProjectCapability Include="Msix" />
   </ItemGroup>
 
   <!-- 
@@ -45,4 +51,10 @@
   <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
   </PropertyGroup>
+  <ItemGroup>
+    <PRIResource Remove="SolresolConverter\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SolresolConverter\SolresolConverter\SolresolConverter.csproj" />
+  </ItemGroup>
 </Project>

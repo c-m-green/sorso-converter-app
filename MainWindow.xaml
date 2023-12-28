@@ -10,7 +10,14 @@
 
     <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
+            <TextBox x:Name="sorsoIn" MaxWidth="250" TextWrapping="Wrap" AcceptsReturn="True" PlaceholderText="Enter Solresol text..."></TextBox>
+            <ComboBox x:Name="sorsoInFormat"></ComboBox>
+            <TextBox x:Name="sorsoOut" MaxWidth="250" TextWrapping="Wrap" IsReadOnly="True" PlaceholderText="Text output appears here."></TextBox>
+            <ComboBox x:Name="sorsoOutFormat"></ComboBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Button x:Name="convertButton" Content="Convert" Click="convertButton_Click"></Button>
+            <Button x:Name="clearButton" Content="Clear" Click="clearButton_Click"></Button>
         </StackPanel>
     </StackPanel>
 </Window>
