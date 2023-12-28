@@ -21,7 +21,7 @@ namespace SolresolConverterApp
             sorsoInFormat.ItemsSource = _enumVal.ToList();
             sorsoOutFormat.ItemsSource = _enumVal.ToList();
             sorsoInFormat.SelectedItem = SolresolFormat.Sorso;
-            sorsoOutFormat.SelectedItem = SolresolFormat.Ses;
+            sorsoOutFormat.SelectedItem = SolresolFormat.SesCmgreen;
         }
 
         private void convertButton_Click(object sender, RoutedEventArgs e)
