@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SolresolConverterApp (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "SolresolConverterApp (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
