@@ -49,6 +49,9 @@ namespace SolresolConverterApp
             } catch (NotImplementedException)
             {
                 sorsoOut.Text = "Sorry, this format is not available yet!";
+            } catch (Exception ex)
+            {
+                sorsoOut.Text = "Oops. Something went wrong.";
             }
         }
 
