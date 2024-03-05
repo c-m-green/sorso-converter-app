@@ -13,11 +13,12 @@
             <TextBox x:Name="sorsoIn" IsSpellCheckEnabled="False" MaxWidth="250" TextWrapping="Wrap" AcceptsReturn="True" PlaceholderText="Enter Solresol text..."></TextBox>
             <ComboBox x:Name="sorsoInFormat"></ComboBox>
             <TextBox x:Name="sorsoOut" MaxWidth="250" TextWrapping="Wrap" IsReadOnly="True" PlaceholderText="Text output appears here."></TextBox>
-            <ComboBox x:Name="sorsoOutFormat"></ComboBox>
+            <ComboBox x:Name="sorsoOutFormat" SelectionChanged="sorsoOutFormat_SelectionChanged"></ComboBox>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Button x:Name="convertButton" Content="Convert" Click="convertButton_Click"></Button>
             <Button x:Name="clearButton" Content="Clear" Click="clearButton_Click"></Button>
         </StackPanel>
+        <TextBox HorizontalAlignment="Right" x:Name="compoundWordsBox" IsSpellCheckEnabled="False" MaxWidth="250" TextWrapping="Wrap" AcceptsReturn="False" PlaceholderText="OPTIONAL: Compound words separated by ';' (e.g., doremi fasollasi;midore silafa;silafa mire doremi)"></TextBox>
     </StackPanel>
 </Window>
